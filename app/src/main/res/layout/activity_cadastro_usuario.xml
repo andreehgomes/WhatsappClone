@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.CadastroUsuarioActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_cadastro_nome"
+        app:layout_constraintStart_toStartOf="@+id/edit_cadastro_nome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_nome"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="313dp"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edit_cadastro_email"
+        app:layout_constraintStart_toStartOf="@+id/edit_cadastro_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_email"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="366dp"
+        android:ems="10"
+        android:hint="Digite seu e-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edit_cadastro_senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_cadastro_senha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_senha"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="419dp"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/bt_cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/bt_cadastrar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="472dp"
+        android:text="@string/botao_cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/botaoPadrao"/>
+
+</android.support.constraint.ConstraintLayout>
